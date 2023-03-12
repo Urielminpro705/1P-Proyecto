@@ -11,7 +11,7 @@ namespace _1P_Proyecto
         static void Main(string[] args)
         {
             Alimento[] a = new Alimento[50];
-            int opcion, pos=0;
+            int opcion, pos=1;
             do
             {
                 opcion = menu();
@@ -19,6 +19,7 @@ namespace _1P_Proyecto
                 {
                     case 1:
                         leerDatos(pos);
+                        pos++;
                         break;
 
                     case 2:
@@ -45,6 +46,18 @@ namespace _1P_Proyecto
             Console.WriteLine("1) Estandar");
             Console.WriteLine("2) Intermedio");
             Console.WriteLine("3) Premium");
+            opcion = int.Parse(Console.ReadLine());
+            return opcion;
+        }
+
+        public static int menuTamaño()
+        {
+            int opcion;
+            Console.WriteLine("--Elige una opcion--");
+            Console.WriteLine("1) 1 kg");
+            Console.WriteLine("2) 8 kg");
+            Console.WriteLine("3) 12 kg");
+            Console.WriteLine("4) 24 kg");
             opcion = int.Parse(Console.ReadLine());
             return opcion;
         }
