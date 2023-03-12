@@ -11,14 +11,14 @@ namespace _1P_Proyecto
         static void Main(string[] args)
         {
             Alimento[] a = new Alimento[50];
-            int opcion, pos=1;
+            int opcion, pos = 1, opcion2;
             do
             {
                 opcion = menu();
                 switch (opcion)
                 {
                     case 1:
-                        leerDatos(pos);
+                        opcion2 = menuTipo();
                         pos++;
                         break;
 
@@ -32,9 +32,9 @@ namespace _1P_Proyecto
         {
             int opcion;
             Console.WriteLine("--Elige una opcion--");
-            Console.WriteLine("1) Agregar una compra");
-            Console.WriteLine("2) Ver total de la compra");
-            Console.WriteLine("3) Confirmar compra");
+            Console.WriteLine("1) Agregar una compra al pedido");
+            Console.WriteLine("2) Ver total del pedido");
+            Console.WriteLine("3) Confirmar pedido");
             opcion=int.Parse(Console.ReadLine());
             return opcion;
         }
@@ -42,7 +42,7 @@ namespace _1P_Proyecto
         public static int menuTipo()
         {
             int opcion;
-            Console.WriteLine("--Elige una opcion--");
+            Console.WriteLine("--Elige un tipo de grado alimenticio--");
             Console.WriteLine("1) Estandar");
             Console.WriteLine("2) Intermedio");
             Console.WriteLine("3) Premium");
