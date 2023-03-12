@@ -8,7 +8,18 @@ namespace _1P_Proyecto
 {
     partial class Alimento
     {
-        private int pesoKilos;
+        private int kilos;
         private String tipo;
+
+        public Alimento()
+        {
+
+        }
+
+        public Alimento(int kilos, String tipo)
+        {
+            this.kilos = kilos;
+            this.tipo = tipo;
+        }
     }
 }
