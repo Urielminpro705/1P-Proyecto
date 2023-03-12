@@ -10,6 +10,7 @@ namespace _1P_Proyecto
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

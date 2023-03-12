@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace _1P_Proyecto
 {
-    partial class Class1
+    partial class Alimento
     {
+        private int pesoKilos;
+        private String tipo;
     }
 }
