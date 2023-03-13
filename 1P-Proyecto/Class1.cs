@@ -121,5 +121,32 @@ namespace _1P_Proyecto
                     break;
             }
         }
+
+
+        public int getKilos()
+        {
+            return this.kilos;
+        }
+
+        public String getTipo()
+        {
+            return this.tipo;
+        }
+
+        public double getPrecio()
+        {
+            return this.precio;
+        }
+
+        public void setKilos(int kilos)
+        {
+            this.kilos = kilos;
+        }
+
+        public void setTipo(String tipo)
+        {
+            this.tipo = tipo;
+        }
+
     }
 }
