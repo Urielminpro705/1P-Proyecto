@@ -138,6 +138,11 @@ namespace _1P_Proyecto
             return this.precio;
         }
 
+        public double getPrecioDescuento()
+        {
+            return this.precioDescuento;
+        }
+
         public void setKilos(int kilos)
         {
             this.kilos = kilos;
