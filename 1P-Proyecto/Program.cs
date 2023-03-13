@@ -11,21 +11,56 @@ namespace _1P_Proyecto
         static void Main(string[] args)
         {
             Alimento[] a = new Alimento[50];
-            int opcion, pos = 1, opcion2;
+            int opcion=-1, pos = 1, opcion2=0;
             do
             {
-                opcion = menu();
-                switch (opcion)
+                try
                 {
-                    case 1:
-                        opcion2 = menuTipo();
-                        pos++;
-                        break;
+                    opcion = menu();
+                    switch (opcion)
+                    {
+                        case 1:
+                            do
+                            {
+                                try
+                                {
+                                    opcion2 = menuTipo();
+                                    switch (opcion2)
+                                    {
 
-                    case 2:
-                        break;
+                                    }
+                                }
+                                catch (FormatException)
+                                {
+                                    Console.WriteLine("\nLas letras no son validas, vuelve a intentar\n");
+                                }
+
+                            } while (opcion2!=4);
+                            
+                            break;
+
+                        case 2:
+                            break;
+
+                        case 3:
+                            break;
+
+                        default: 
+                            if(opcion<1 || opcion > 3)
+                            {
+                                Console.WriteLine("\nEl numero no es una opcion valida\n");
+                            }
+                            break;
+
+                    }
                 }
-            } while (opcion!=4);
+                catch(FormatException)
+                {
+                    Console.WriteLine("\nLas letras no son validas, vuelve a intentar\n");
+                }
+                
+                
+            } while (opcion!=3);
         }
 
         public static int menu()
@@ -46,6 +81,7 @@ namespace _1P_Proyecto
             Console.WriteLine("1) Estandar");
             Console.WriteLine("2) Intermedio");
             Console.WriteLine("3) Premium");
+            Console.WriteLine("\n4) --Regresar--");
             opcion = int.Parse(Console.ReadLine());
             return opcion;
         }
@@ -58,6 +94,7 @@ namespace _1P_Proyecto
             Console.WriteLine("2) 8 kg");
             Console.WriteLine("3) 12 kg");
             Console.WriteLine("4) 24 kg");
+            Console.WriteLine("\n5) --Regresar--");
             opcion = int.Parse(Console.ReadLine());
             return opcion;
         }
