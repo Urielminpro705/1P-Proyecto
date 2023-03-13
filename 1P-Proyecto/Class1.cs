@@ -11,6 +11,7 @@ namespace _1P_Proyecto
         private int kilos;
         private String tipo;
         private double precio;
+        private double precioDescuento;
 
         public Alimento()
         {
@@ -28,27 +29,29 @@ namespace _1P_Proyecto
             switch (this.tipo)
             {
                 case "Estandar":
+
+                    this.precio = 40;
                     if (this.kilos == 1)
                     {
-                        this.precio = 40;
+                        this.precioDescuento = precio;
                     }
                     else
                     {
                         if (this.kilos == 8)
                         {
-                            this.precio = (40*0.93)*this.kilos;
+                            this.precioDescuento = (this.precio*0.93)*this.kilos;
                         }
                         else
                         {
                             if (this.kilos == 12)
                             {
-                                this.precio = (40 * 0.87) * this.kilos;
+                                this.precioDescuento = (this.precio * 0.87) * this.kilos;
                             }
                             else
                             {
                                 if (this.kilos == 24)
                                 {
-                                    this.precio = (40 * 0.82) * this.kilos;
+                                    this.precioDescuento = (this.precio * 0.82) * this.kilos;
                                 }
                             }
                         }
@@ -56,9 +59,65 @@ namespace _1P_Proyecto
                     break;
 
                 case "Intermedio":
+
+                    this.precio = 52;
+                    if (this.kilos == 1)
+                    {
+                        this.precioDescuento = precio;
+                    }
+                    else
+                    {
+                        if (this.kilos == 8)
+                        {
+                            this.precioDescuento = (this.precio * 0.93) * this.kilos;
+                        }
+                        else
+                        {
+                            if (this.kilos == 12)
+                            {
+                                this.precioDescuento = (this.precio * 0.87) * this.kilos;
+                            }
+                            else
+                            {
+                                if (this.kilos == 24)
+                                {
+                                    this.precioDescuento = (this.precio * 0.82) * this.kilos;
+                                }
+                            }
+                        }
+                    }
                     break;
 
+
                 case "Premium":
+
+                    this.precio = 65;
+                    if (this.kilos == 1)
+                    {
+                        this.precioDescuento = precio;
+                    }
+                    else
+                    {
+                        if (this.kilos == 8)
+                        {
+                            this.precioDescuento = (this.precio * 0.93) * this.kilos;
+                        }
+                        else
+                        {
+                            if (this.kilos == 12)
+                            {
+                                this.precioDescuento = (this.precio * 0.87) * this.kilos;
+                            }
+                            else
+                            {
+                                if (this.kilos == 24)
+                                {
+                                    this.precioDescuento = (this.precio * 0.82) * this.kilos;
+                                }
+                            }
+                        }
+                    }
+
                     break;
             }
         }
