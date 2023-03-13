@@ -12,8 +12,7 @@ namespace _1P_Proyecto
         {
             Alimento[] a = new Alimento[50];
             int opcion=-1, pos = 0, opcion2=0, opcion3=0, opcion4=0;
-            double total;
-            total = calcularTotal(a, pos);
+            double total=0;
             do
             {
                 try
@@ -239,10 +238,11 @@ namespace _1P_Proyecto
                                 }
 
                             } while (opcion2!=4);
-                            
+                            total = calcularTotal(a, pos);
                             break;
 
-                        case 2:       
+                        case 2:
+                            
                             imprimirDatos(pos, a, total);
                             break;
 
@@ -255,9 +255,17 @@ namespace _1P_Proyecto
                                     switch (opcion4)
                                     {
                                         case 1:
-                                            Console.WriteLine("Vuelva pronto");
+                                            Console.WriteLine("\nVuelva pronto");
+                                            opcion4 = 1;
                                             break;
+
                                         case 2:
+                                            opcion4 = 2;
+                                            break;
+
+                                        default:
+                                            Console.WriteLine("El numero no es valido");
+                                            break;
 
                                     }
 
@@ -267,8 +275,7 @@ namespace _1P_Proyecto
                                     Console.WriteLine("\nLas letras no son validas, vuelve a intentar\n");
                                 }
 
-                            } while (opcion4 != 5);
-                            opcion2 = 4;
+                            }while (opcion4 != 1 && opcion4!=2);
                             break;
 
                         default: 
@@ -303,11 +310,11 @@ namespace _1P_Proyecto
         public static int menuConfirmacion(int pos, double total)
         {
             int opcion; 
-            Console.WriteLine("---Confirmacion---");
+            Console.WriteLine("\n---Confirmacion---");
             Console.WriteLine("¿Quieres confirmar el pedido?");
             Console.WriteLine("{0} articulos con un total de {1}",pos,total);
             Console.WriteLine("1) Confirmar");
-            Console.WriteLine("2)Seguir comprando");
+            Console.WriteLine("2) Seguir comprando");
             opcion=int.Parse(Console.ReadLine());
             return opcion;
         }
