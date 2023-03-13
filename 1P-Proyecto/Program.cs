@@ -40,6 +40,13 @@ namespace _1P_Proyecto
                                                         case 1:
 
                                                             break;
+
+                                                        default:
+                                                            if (opcion3 < 1 || opcion3 > 5)
+                                                            {
+                                                                Console.WriteLine("\nEl numero no es una opcion valida\n");
+                                                            }
+                                                            break;
                                                     }
                                                 }
                                                 catch (FormatException)
@@ -49,6 +56,13 @@ namespace _1P_Proyecto
 
                                             } while (opcion3 != 5);
 
+                                            break;
+
+                                        default:
+                                            if (opcion2 < 1 || opcion2 > 4)
+                                            {
+                                                Console.WriteLine("\nEl numero no es una opcion valida\n");
+                                            }
                                             break;
                                     }
                                 }
