@@ -82,7 +82,121 @@ namespace _1P_Proyecto
                                                 }
 
                                             } while (opcion3 != 5);
+                                            opcion2 = 4;
+                                            break;
 
+                                        case 2:
+                                            do
+                                            {
+                                                try
+                                                {
+
+                                                    opcion3 = menuTamaño();
+                                                    switch (opcion3)
+                                                    {
+                                                        case 1:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(1);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 2:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(8);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 3:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(12);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 4:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(24);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 5:
+                                                            break;
+
+                                                        default:
+                                                            if (opcion3 < 1 || opcion3 > 5)
+                                                            {
+                                                                Console.WriteLine("\nEl numero no es una opcion valida\n");
+                                                            }
+                                                            break;
+                                                    }
+                                                }
+                                                catch (FormatException)
+                                                {
+                                                    Console.WriteLine("\nLas letras no son validas, vuelve a intentar\n");
+                                                }
+
+                                            } while (opcion3 != 5);
+                                            opcion2 = 4;
+                                            break;
+
+                                        case 3:
+                                            do
+                                            {
+                                                try
+                                                {
+
+                                                    opcion3 = menuTamaño();
+                                                    switch (opcion3)
+                                                    {
+                                                        case 1:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(1);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 2:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(8);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 3:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(12);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 4:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(24);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 5:
+                                                            break;
+
+                                                        default:
+                                                            if (opcion3 < 1 || opcion3 > 5)
+                                                            {
+                                                                Console.WriteLine("\nEl numero no es una opcion valida\n");
+                                                            }
+                                                            break;
+                                                    }
+                                                }
+                                                catch (FormatException)
+                                                {
+                                                    Console.WriteLine("\nLas letras no son validas, vuelve a intentar\n");
+                                                }
+
+                                            } while (opcion3 != 5);
+                                            opcion2 = 4;
                                             break;
 
                                         default:
@@ -103,6 +217,7 @@ namespace _1P_Proyecto
                             break;
 
                         case 2:
+
                             break;
 
                         case 3:
