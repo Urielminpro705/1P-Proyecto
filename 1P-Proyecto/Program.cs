@@ -38,7 +38,34 @@ namespace _1P_Proyecto
                                                     switch (opcion3)
                                                     {
                                                         case 1:
-                                                            
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(1);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 2:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(8);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 3:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(12);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 4:
+                                                            a[pos] = new Alimento();
+                                                            a[pos].setKilos(24);
+                                                            pos++;
+                                                            opcion3 = 5;
+                                                            break;
+
+                                                        case 5:
                                                             break;
 
                                                         default:
