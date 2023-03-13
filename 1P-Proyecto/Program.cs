@@ -11,7 +11,7 @@ namespace _1P_Proyecto
         static void Main(string[] args)
         {
             Alimento[] a = new Alimento[50];
-            int opcion=-1, pos = 1, opcion2=0;
+            int opcion=-1, pos = 1, opcion2=0, opcion3=0;
             do
             {
                 try
@@ -29,6 +29,26 @@ namespace _1P_Proyecto
                                     switch (opcion2)
                                     {
                                         case 1:
+                                            do
+                                            {
+                                                try
+                                                {
+
+                                                    opcion3 = menuTipo();
+                                                    switch (opcion3)
+                                                    {
+                                                        case 1:
+
+                                                            break;
+                                                    }
+                                                }
+                                                catch (FormatException)
+                                                {
+                                                    Console.WriteLine("\nLas letras no son validas, vuelve a intentar\n");
+                                                }
+
+                                            } while (opcion3 != 5);
+
                                             break;
                                     }
                                 }
