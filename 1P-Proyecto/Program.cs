@@ -39,6 +39,7 @@ namespace _1P_Proyecto
                                                     {
                                                         case 1:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Estandar");
                                                             a[pos].setKilos(1);
                                                             pos++;
                                                             opcion3 = 5;
@@ -46,6 +47,7 @@ namespace _1P_Proyecto
 
                                                         case 2:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Estandar");
                                                             a[pos].setKilos(8);
                                                             pos++;
                                                             opcion3 = 5;
@@ -53,6 +55,7 @@ namespace _1P_Proyecto
 
                                                         case 3:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Estandar");
                                                             a[pos].setKilos(12);
                                                             pos++;
                                                             opcion3 = 5;
@@ -60,6 +63,7 @@ namespace _1P_Proyecto
 
                                                         case 4:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Estandar");
                                                             a[pos].setKilos(24);
                                                             pos++;
                                                             opcion3 = 5;
@@ -96,6 +100,7 @@ namespace _1P_Proyecto
                                                     {
                                                         case 1:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Intermedio");
                                                             a[pos].setKilos(1);
                                                             pos++;
                                                             opcion3 = 5;
@@ -103,6 +108,7 @@ namespace _1P_Proyecto
 
                                                         case 2:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Intermedio");
                                                             a[pos].setKilos(8);
                                                             pos++;
                                                             opcion3 = 5;
@@ -110,6 +116,7 @@ namespace _1P_Proyecto
 
                                                         case 3:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Intermedio");
                                                             a[pos].setKilos(12);
                                                             pos++;
                                                             opcion3 = 5;
@@ -117,6 +124,7 @@ namespace _1P_Proyecto
 
                                                         case 4:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Intermedio");
                                                             a[pos].setKilos(24);
                                                             pos++;
                                                             opcion3 = 5;
@@ -153,6 +161,7 @@ namespace _1P_Proyecto
                                                     {
                                                         case 1:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Premium");
                                                             a[pos].setKilos(1);
                                                             pos++;
                                                             opcion3 = 5;
@@ -160,6 +169,7 @@ namespace _1P_Proyecto
 
                                                         case 2:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Premium");
                                                             a[pos].setKilos(8);
                                                             pos++;
                                                             opcion3 = 5;
@@ -167,6 +177,7 @@ namespace _1P_Proyecto
 
                                                         case 3:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Premium");
                                                             a[pos].setKilos(12);
                                                             pos++;
                                                             opcion3 = 5;
@@ -174,6 +185,7 @@ namespace _1P_Proyecto
 
                                                         case 4:
                                                             a[pos] = new Alimento();
+                                                            a[pos].setTipo("Premium");
                                                             a[pos].setKilos(24);
                                                             pos++;
                                                             opcion3 = 5;
