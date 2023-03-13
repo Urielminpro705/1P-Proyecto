@@ -34,11 +34,11 @@ namespace _1P_Proyecto
                                                 try
                                                 {
 
-                                                    opcion3 = menuTipo();
+                                                    opcion3 = menuTamaño();
                                                     switch (opcion3)
                                                     {
                                                         case 1:
-
+                                                            
                                                             break;
 
                                                         default:

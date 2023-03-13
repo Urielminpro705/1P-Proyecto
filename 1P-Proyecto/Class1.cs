@@ -10,6 +10,7 @@ namespace _1P_Proyecto
     {
         private int kilos;
         private String tipo;
+        private double precio;
 
         public Alimento()
         {
@@ -20,6 +21,21 @@ namespace _1P_Proyecto
         {
             this.kilos = kilos;
             this.tipo = tipo;
+        }
+
+        public void calcularPrecio()
+        {
+            switch (this.tipo)
+            {
+                case "Estandar":
+                    break;
+
+                case "Intermedio":
+                    break;
+
+                case "Premium":
+                    break;
+            }
         }
     }
 }
