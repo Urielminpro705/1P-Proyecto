@@ -24,10 +24,12 @@ namespace _1P_Proyecto
                             {
                                 try
                                 {
+
                                     opcion2 = menuTipo();
                                     switch (opcion2)
                                     {
-
+                                        case 1:
+                                            break;
                                     }
                                 }
                                 catch (FormatException)
