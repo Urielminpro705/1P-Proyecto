@@ -15,6 +15,9 @@ namespace _1P_Proyecto
             double total=0;
             do
             {
+                opcion2 = 0;
+                opcion3 = 0;
+                opcion4 = 0;
                 try
                 {
                     opcion = menu(pos);
