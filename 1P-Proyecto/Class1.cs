@@ -12,6 +12,7 @@ namespace _1P_Proyecto
         private String tipo;
         private double precio;
         private double precioDescuento;
+        private int cantidad;
 
         public Alimento()
         {
@@ -33,25 +34,25 @@ namespace _1P_Proyecto
                     this.precio = 40;
                     if (this.kilos == 1)
                     {
-                        this.precioDescuento = precio;
+                        this.precioDescuento = this.precio * this.cantidad;
                     }
                     else
                     {
                         if (this.kilos == 8)
                         {
-                            this.precioDescuento = (this.precio*0.93)*this.kilos;
+                            this.precioDescuento = (this.precio*0.93)*this.kilos*this.cantidad;
                         }
                         else
                         {
                             if (this.kilos == 12)
                             {
-                                this.precioDescuento = (this.precio * 0.87) * this.kilos;
+                                this.precioDescuento = (this.precio * 0.87) * this.kilos * this.cantidad;
                             }
                             else
                             {
                                 if (this.kilos == 24)
                                 {
-                                    this.precioDescuento = (this.precio * 0.82) * this.kilos;
+                                    this.precioDescuento = (this.precio * 0.82) * this.kilos * this.cantidad;
                                 }
                             }
                         }
@@ -63,25 +64,25 @@ namespace _1P_Proyecto
                     this.precio = 52;
                     if (this.kilos == 1)
                     {
-                        this.precioDescuento = precio;
+                        this.precioDescuento = this.precio * this.cantidad;
                     }
                     else
                     {
                         if (this.kilos == 8)
                         {
-                            this.precioDescuento = (this.precio * 0.93) * this.kilos;
+                            this.precioDescuento = (this.precio * 0.93) * this.kilos * this.cantidad;
                         }
                         else
                         {
                             if (this.kilos == 12)
                             {
-                                this.precioDescuento = (this.precio * 0.87) * this.kilos;
+                                this.precioDescuento = (this.precio * 0.87) * this.kilos * this.cantidad;
                             }
                             else
                             {
                                 if (this.kilos == 24)
                                 {
-                                    this.precioDescuento = (this.precio * 0.82) * this.kilos;
+                                    this.precioDescuento = (this.precio * 0.82) * this.kilos * this.cantidad;
                                 }
                             }
                         }
@@ -94,25 +95,25 @@ namespace _1P_Proyecto
                     this.precio = 65;
                     if (this.kilos == 1)
                     {
-                        this.precioDescuento = precio;
+                        this.precioDescuento = this.precio * this.cantidad;
                     }
                     else
                     {
                         if (this.kilos == 8)
                         {
-                            this.precioDescuento = (this.precio * 0.93) * this.kilos;
+                            this.precioDescuento = (this.precio * 0.93) * this.kilos * this.cantidad;
                         }
                         else
                         {
                             if (this.kilos == 12)
                             {
-                                this.precioDescuento = (this.precio * 0.87) * this.kilos;
+                                this.precioDescuento = (this.precio * 0.87) * this.kilos * this.cantidad;
                             }
                             else
                             {
                                 if (this.kilos == 24)
                                 {
-                                    this.precioDescuento = (this.precio * 0.82) * this.kilos;
+                                    this.precioDescuento = (this.precio * 0.82) * this.kilos * this.cantidad;
                                 }
                             }
                         }
@@ -126,6 +127,11 @@ namespace _1P_Proyecto
         public int getKilos()
         {
             return this.kilos;
+        }
+
+        public int getCantidad()
+        {
+            return this.cantidad;
         }
 
         public String getTipo()
@@ -153,5 +159,9 @@ namespace _1P_Proyecto
             this.tipo = tipo;
         }
 
+        public void setCantidad(int cantidad)
+        {
+            this.cantidad = cantidad;
+        }
     }
 }
